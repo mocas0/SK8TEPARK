@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+<html lang="en">
+  <head>
+
+
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+    <!-- Custom styles for this template -->
+    <link href="/stylesheets/signin.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Londrina+Shadow' rel='stylesheet' type='text/css'>
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->	
+
+
+
+
+
+<!-- Static navbar -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a class="page-scroll" href="/#page-top" style="background: transparent; color: #0038a8; border: transparent; box-shadow: none;">Home</a></li>
+           
+            <li><a class="page-scroll" href="/#contacts" style="background: transparent; color: #0038a8; border: transparent; box-shadow: none;">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+
+
+
+
+
+<!-- THIS IS MY HEADERRRR!!!!!!!! -->
+
+<div id="headerwrap">
+  <div class="container">
+    <div class="row" style="margin-top: -60px">
+      <div class="col-lg-6 col-lg-offset-3">
+
+        <h1>SK8TEPARK</h1>
+        
+      </div>
+    </div>
+  </div>
+</div>
+  <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Skate Parks Near You</title>
+	<link rel="stylesheet" href="">
+
+
+<div class="container ptb" style="padding-top: 25px;">
+      <div class="row">
+        <h2 class="centered mb text-center"></h2>
+        <div class="col-md-6">
+          
+        </div><!--/col-md-6-->
+        <div class="col-md-6">
+         
+        </div><!--/col-md-6-->
+      </div><!--/row-->
+    </div><!-- /.container -->
+    <div class="container" style="padding-top: 45px">
+      <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+          <img src="/images/image2.jpg" class="img-responsive" alt="">
+        </div>
+      </div><!--/row-->
+    </div><!--/.container-->
+
+
+
+
+
+<div class="container ptb" style="padding-top: 25px;">
+      <div class="row">
+        <h2 class="centered mb text-center"></h2>
+        <div class="col-md-6">
+          
+        </div><!--/col-md-6-->
+        <div class="col-md-6">
+         
+        </div><!--/col-md-6-->
+      </div><!--/row-->
+    </div><!-- /.container -->
+    <div class="container" style="padding-top: 45px">
+      <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+        <form class="form-search" role="form" action="/search" method="GET">
+        <label for="city" class="sr-only">City</label>
+        <input type="text" id="city" class="form-control" name="city" placeholder="Enter City" required autofocus>
+        <br>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Search Now</button>
+      </form>
+
+        </div>
+      </div><!--/row-->
+    </div><!--/.container-->
+
+</div>
+</div>
+</div>
+</div>
+
+
+
+<!-- End of Form -->
+
+</div><!--/col-md-6-->
+
+
+
+
+        <div class="col-md-6">
+         <h2 class="centered mb text-center"></h2>
+        </div><!--/col-md-6-->
+      </div><!--/row-->
+    </div><!-- /.container -->
+    <div class="container" style="padding-top: 45px">
+      <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+<center>
+  
+  <% data.forEach(function(result){ %>
+   <div><h1><%= result.venue.name %></h1></div>
+    <div><h4><%= result.venue.location.address %></h4></div>
+    <div><h4><%= result.venue.location.city %></h4></div> 
+    <div><h4><%= result.venue.location.state %></h4></div>
+    <div><h4><%= result.venue.contact.formattedPhone %></h4></div>
+    <div><h4><%= result.venue.photos %> </h4></div>
+    <br>
+  <% }) %>
+  </center>
+     </div>
+      </div><!--/row-->
+    </div><!--/.container-->
+
+
+
+
+
+
+</body>
+</html>
+

@@ -1,0 +1,68 @@
+<div id="social">
+  <div class="container">
+      <div class="row-center text-center">
+        <div class="col-lg-4">
+          <a target="_blank" href="https://www.facebook.com/monet.wilson1"><i class="fa fa-facebook"></i></a>
+        </div>
+
+        <div class="col-lg-4">
+          <a target="_blank" href="https://www.linkedin.com/in/monetwilson"><i class="fa fa-linkedin"></i></a>
+        </div>
+
+        <div class="col-lg-4">
+          <a href="mailto:monetwilson1@gmail.com"><i class="fa fa-envelope"></i></a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+<!-- JAVASCRIPT STUFF FANCYBOX -->
+<!-- Scrolling Nav JavaScript -->
+<script src="js/jquery.easing.min.js"></script>
+<script src="js/scrolling-nav.js"></script>
+
+<script type="text/javascript">
+  $(document).ready(function() {
+
+  // fancybox popover on index page
+  $(".fancybox")
+      .attr('rel', 'gallery')
+      .fancybox({
+        helpers: {
+          title: {
+            type: 'inside',
+          },
+          overlay: {
+           locked: false
+         },
+        }
+      });
+
+
+  $(".video").click(function() {
+    $.fancybox({
+      helpers: {
+        overlay: {
+          locked: false
+        }
+      },
+      'padding'   : 0,
+      'autoScale'   : false,
+      'transitionIn'  : 'none',
+      'transitionOut' : 'none',
+      'title'     : this.title,
+      'width'     : 640,
+      'height'    : 385,
+      'href'      : this.href.replace(new RegExp("watch\\?v=", "i"), 'v/'),
+      'type'      : 'swf',
+      'swf'     : {
+      'wmode'       : 'transparent',
+      'allowfullscreen' : 'true'
+      },
+    });
+
+    return false;
+  });
+}); //closing document ready
+</script>

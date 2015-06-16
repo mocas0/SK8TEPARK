@@ -1,0 +1,16 @@
+{
+  "development": {
+    "database": "simple_login_development",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "test": {
+    "database": "simple_login_test",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "production": {
+    "use_env_variable": "HEROKU_POSTGRESQL_GRAY_URL"
+  }
+}
+
